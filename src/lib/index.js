@@ -1,11 +1,5 @@
-import { default as BpmfText } from './elements/BpmfText/BpmfText.js';
-import { default as BpmfTextBlock }
+export { default as BpmfText } from './elements/BpmfText/BpmfText.js';
+export { default as BpmfTextBlock }
   from './elements/BpmfTextBlock/BpmfTextBlock.js';
-import { default as BpmfAutoText }
+export { default as BpmfAutoText }
   from './elements/BpmfAutoText/BpmfAutoText.js';
-
-export default {
-  BpmfText,
-  BpmfTextBlock,
-  BpmfAutoText
-};
