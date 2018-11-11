@@ -2,12 +2,8 @@
   "name": "react-bpmf",
   "description": "React library for displaying Zhuyin Fuhao alongside Chinese characters",
   "version": "0.0.1-alpha",
-  "main": "./build/index.js",
-  "scripts": {
-    "build": "./node_modules/.bin/webpack --mode=production",
-    "prepublishOnly": "npm run build"
-  },
-  "author": "Derek Chan",
+  "main": "./src/index.js",
+  "author": "Derek Chan <dchan3@hawaii.edu>",
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
