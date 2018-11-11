@@ -6,7 +6,7 @@ const BlockContainer = styled.div`
   writing-mode: ${props => {
     if (props.vertical) return 'horizontal-tb';
     else return 'vertical-lr';
-  }}
+  }};
   display: block;
   text-orientation: upright;
 `;
@@ -32,7 +32,7 @@ export default class BpmfTextBlock extends React.Component {
         }
         else {
           roman += cur;
-          
+
           if (i == arr.length - 1) acc.push(roman);
         }
         return acc;

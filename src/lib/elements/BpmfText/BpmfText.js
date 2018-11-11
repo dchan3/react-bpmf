@@ -29,8 +29,10 @@ const BpmfTone = styled.span`
   font-family: "STKaiti", sans-serif;
   display: block;
   text-align: ${props => {
-    if (props.tone.match(/[ˊˇˋ]/))
-      return (props.pronLength >= 3) ? 'right' : 'center';
+    if (props.tone.match(/[ˊˇˋ]/)) {
+      if (props.pronLength >= 3)  { return 'right'; }
+      else if (props.pronLength <= 2) { return 'left'; }
+    }
     else return 'left'
   }};
   margin-top: ${props =>
