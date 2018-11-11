@@ -30,11 +30,11 @@ const BpmfTone = styled.span`
   display: block;
   text-align: ${props => {
     if (props.tone.match(/[ˊˇˋ]/)) {
-      if (props.pronLength > 3)  { return 'right'; }
-      if (props.pronLength === 3)  { return 'center'; }
-      else if (props.pronLength === 2) { return 'left'; }
+      if (props.pronLength === 3)  { return 'right'; }
+      else if (props.pronLength === 2) { return 'center'; }
+      else if (props.pronLength === 1) { return 'left'; }
     }
-    else return 'left'
+    else { return 'left'; }
   }};
   margin-top: ${props =>
     'calc(' + props.fontSize + ' / ' +
