@@ -18,6 +18,7 @@ export default class BpmfAutoTextUnit extends Component {
     var pron = convert(this.props.string),
       tone = pron.match(/[ˊˇˋ˙]/);
     tone = tone && tone[0] || "";
+    pron = pron.replace(tone, '');
 
     return (
       <BpmfText string={this.props.string}
