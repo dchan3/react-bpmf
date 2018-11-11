@@ -22,7 +22,7 @@ export default class BpmfAutoTextUnit extends Component {
 
     return (
       <BpmfText string={this.props.string}
-        pronunciation={convert(this.props.string)}
+        pronunciation={pron}
         tone={tone}
         fontSize={this.props.fontSize}
         vertical={this.props.vertical} />
