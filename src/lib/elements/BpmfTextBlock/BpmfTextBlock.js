@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BpmfText from '../BpmfText/BpmfText.js';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const BlockContainer = styled.div`
   writing-mode: ${props => {
@@ -12,6 +13,14 @@ const BlockContainer = styled.div`
 `;
 
 export default class BpmfTextBlock extends React.Component {
+  static propTypes = {
+    container_vertical: PropTypes.bool,
+    text_vertical: PropTypes.bool,
+    fontSize: PropTypes.string,
+    text: PropTypes.string,
+    pronunciation: PropTypes.string
+  }
+
   constructor(props) {
     super(props);
   }

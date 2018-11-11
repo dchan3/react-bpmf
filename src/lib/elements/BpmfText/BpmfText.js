@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const BpmfWrap = styled.div`
   font-size: ${props => props.fontSize};
@@ -48,6 +49,14 @@ const BpmfTone = styled.span`
 `;
 
 export default class BpmfText extends Component {
+  static propTypes = {
+    vertical: PropTypes.bool,
+    fontSize: PropTypes.string,
+    string: PropTypes.string,
+    pronunciation: PropTypes.string,
+    tone: PropTypes.string
+  }
+
   constructor(props) {
     super(props);
   }
