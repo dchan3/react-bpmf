@@ -63,10 +63,9 @@ export default class BpmfTextBlock extends React.Component {
     return (
       <BlockContainer vertical={vert1}>
         {retval.map(function(char, n) {
-          return <BpmfText key={n} string={char.char} pronunciation={char.pron}
-            tone={char.tone}
-            fontSize={self.fontSize}
-            vertical={vert2} />;
+          return <BpmfText key={char + n.toString()}
+            string={char.char} pronunciation={char.pron} tone={char.tone}
+            fontSize={self.fontSize} vertical={vert2} />;
         })}
       </BlockContainer>
     );
