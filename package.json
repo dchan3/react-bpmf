@@ -41,5 +41,13 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "babel src -d dist"
-  }
+  },
+  "keywords": [
+    "zhuyin fuhao",
+    "bopomofo",
+    "chinese",
+    "chinese language",
+    "pinyin",
+    "ruby text"
+  ]
 }

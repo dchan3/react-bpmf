@@ -1,8 +1,6 @@
 # react-bpmf
-<hr />
 *React library for displaying Zhuyin Fuhao alongside Chinese characters*
 
-## [en-US]
 ### Introduction
 This package aims to render Zhuyin Fuhao, a ruby text system colloquially referred to as 'bopomofo') alongside Chinese characters as specified by the Taiwan Ministry of Education ([see more here](https://r12a.github.io/scripts/bopomofo/ontheweb)) by means of the React framework and parametric CSS, which can be accomplished thanks to [`styled-components`](https://github.com/styled-components/styled-components).
 
