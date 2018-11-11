@@ -31,4 +31,7 @@ This package aims to render Zhuyin Fuhao, a ruby text system colloquially referr
 #### Automated Pronunciation Labeling using `BpmfAutoText`
 `props`: Same as those of `BpmfTextBlock`, excluding `pronunciation`, as the pronunciation string is automatically generated.
 
+### Changelog
+- v0.0.1: The Taiwan Ministry of Education has been implemented only for the vertical display of characters.  
+
 ### Pull Requests and Constructive Criticism Welcome!
