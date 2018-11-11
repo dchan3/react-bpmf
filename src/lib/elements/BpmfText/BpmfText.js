@@ -66,13 +66,13 @@ export default class BpmfText extends Component {
       <BpmfWrap vertical={this.props.vertical} fontSize={this.props.fontSize}>
         <BpmfContent>
           {this.props.string}
-          <BpmfReading>{this.props.pronunciation}
-            <BpmfTone
-              pronLength={this.props.pronunciation.length}
-              tone={this.props.tone}
-              fontSize={this.props.fontSize}>
-              {(this.props.tone) !== '' ? (this.props.tone) : '\u00A0' }
-            </BpmfTone>
+          <BpmfReading>{this.props.pronunciation !== '""' ?
+            this.props.pronunciation : ' '}
+          <BpmfTone pronLength={this.props.pronunciation.length}
+            tone={this.props.tone}
+            fontSize={this.props.fontSize}>
+            {(this.props.tone) !== '' ? (this.props.tone) : '\u00A0' }
+          </BpmfTone>
           </BpmfReading>
         </BpmfContent>
       </BpmfWrap>
