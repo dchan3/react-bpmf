@@ -1,0 +1,43 @@
+{
+  "name": "react-bpmf",
+  "description": "React library for displaying Zhuyin Fuhao alongside Chinese characters",
+  "version": "0.0.1-alpha",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Derek Chan",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-export-default-from": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/plugin-transform-strict-mode": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-styled-components": "^1.8.0",
+    "babel-loader": "^8.0.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx": "0.0.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-watch": "^3.1.5",
+    "polished": "^1.9.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "dependencies": {
+    "chinese-to-pinyin": "^0.1.6",
+    "parcel-bundler": "^1.10.3",
+    "styled-components": "^4.0.2",
+    "zhuyin": "^1.7.0"
+  }
+}
