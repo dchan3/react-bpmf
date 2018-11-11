@@ -9,7 +9,7 @@ const convertHanzi = (hanzi) => {
 }
 
 const convert = (str) => {
-  return str.replace(/[^\u4E00-\u9FCC]+/g, '""')
+  return str.replace(/[^\u4E00-\u9FCC]+/g, '"')
     .replace(/[\u4E00-\u9FCC]+/g, function(match) {
       return convertHanzi(match);
     }).trim();
