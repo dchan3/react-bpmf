@@ -8,7 +8,6 @@ export default class BpmfAutoTextUnit extends Component {
     vertical: PropTypes.bool,
     fontSize: PropTypes.string,
     string: PropTypes.string,
-    tone: PropTypes.string
   }
 
   constructor(props) {
