@@ -22,7 +22,7 @@ export default class BpmfTextBlock extends React.Component {
         if (i === 1) {
           acc = [arr[0]];
         }
-        console.log(cur);
+
         if (cur.match(/[\u4E00-\u9FCC]/) !== null) {
           if (roman.length) {
             acc.push(roman);
@@ -32,7 +32,7 @@ export default class BpmfTextBlock extends React.Component {
         }
         else {
           roman += cur;
-          console.log(acc);
+          
           if (i == arr.length - 1) acc.push(roman);
         }
         return acc;

@@ -2,7 +2,6 @@ import zhuyin from 'zhuyin';
 import pinyin from 'chinese-to-pinyin';
 
 const convertHanzi = (hanzi) => {
-  console.log(hanzi);
   return zhuyin(pinyin(hanzi)).map(function(word) {
     if (word.indexOf('`')) return word.replace('`', 'ˋ');
     return word;
