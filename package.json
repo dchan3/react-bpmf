@@ -4,6 +4,8 @@
   "version": "0.0.1-alpha",
   "main": "./src/index.js",
   "author": "Derek Chan <dchan3@hawaii.edu>",
+  "repository": "https://github.com/dchan3/react-bpmf",
+  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -18,7 +20,6 @@
     "@babel/runtime": "^7.1.2",
     "babel-eslint": "^8.2.6",
     "babel-plugin-styled-components": "^1.8.0",
-    "babel-loader": "^8.0.4",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx": "0.0.2",
