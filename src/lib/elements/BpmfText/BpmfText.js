@@ -11,6 +11,7 @@ const BpmfWrap = styled.div`
   text-orientation: upright;
   margin: 0;
   font-family: "STKaiti", sans-serif;
+  display: grid;
 `;
 
 const BpmfContent = styled.ruby`
