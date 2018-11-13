@@ -21,12 +21,16 @@
     "babel-eslint": "^8.2.6",
     "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "chai": "^4.2.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx": "0.0.2",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "eslint-watch": "^3.1.5",
+    "mocha": "^5.2.0",
     "polished": "^1.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
@@ -39,6 +43,7 @@
     "zhuyin": "^1.7.0"
   },
   "scripts": {
+    "test": "mocha --require @babel/register test/test.js",
     "prepare": "npm run build",
     "build": "babel src -d dist"
   },

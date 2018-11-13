@@ -1,4 +1,7 @@
 # react-bpmf
+[![NPM version](https://img.shields.io/npm/v/react-bpmf.svg?style=flat)](https://www.npmjs.com/package/react-bpmf)
+![npm](https://img.shields.io/npm/dt/react-bpmf.svg)
+
 *React library for displaying Zhuyin Fuhao alongside Chinese characters*
 
 ### Introduction

@@ -8,7 +8,13 @@ export default class BpmfAutoText extends Component {
     container_vertical: PropTypes.bool,
     text_vertical: PropTypes.bool,
     fontSize: PropTypes.string,
-    text: PropTypes.string,
+    text: PropTypes.string.isRequired,
+  }
+
+  static defaultProps = {
+    container_vertical: true,
+    text_vertical: true,
+    fontSize: '16px'
   }
 
   constructor(props) {

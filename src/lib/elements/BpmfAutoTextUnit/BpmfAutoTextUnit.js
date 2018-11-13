@@ -7,7 +7,12 @@ export default class BpmfAutoTextUnit extends Component {
   static propTypes = {
     vertical: PropTypes.bool,
     fontSize: PropTypes.string,
-    string: PropTypes.string,
+    string: PropTypes.string.isRequired,
+  }
+
+  static defaultProps = {
+    vertical: true,
+    fontSize: '16px'
   }
 
   constructor(props) {

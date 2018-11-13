@@ -53,9 +53,14 @@ export default class BpmfText extends Component {
   static propTypes = {
     vertical: PropTypes.bool,
     fontSize: PropTypes.string,
-    string: PropTypes.string,
-    pronunciation: PropTypes.string,
-    tone: PropTypes.string
+    string: PropTypes.string.isRequired,
+    pronunciation: PropTypes.string.isRequired,
+    tone: PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    vertical: true,
+    fontSize: '16px'
   }
 
   constructor(props) {

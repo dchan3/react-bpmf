@@ -17,8 +17,14 @@ export default class BpmfTextBlock extends React.Component {
     container_vertical: PropTypes.bool,
     text_vertical: PropTypes.bool,
     fontSize: PropTypes.string,
-    text: PropTypes.string,
-    pronunciation: PropTypes.string
+    text: PropTypes.string.isRequired,
+    pronunciation: PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    container_vertical: true,
+    text_vertical: true,
+    fontSize: '16px'
   }
 
   constructor(props) {
